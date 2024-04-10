@@ -1,21 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SignUp">
+    android:background="@drawable/backgroundlogin"
+    tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="250dp"
-        android:layout_height="170dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="250dp"
-        android:foregroundGravity="center"
-        app:srcCompat="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#3fff"
+        android:gravity="center"
+        android:padding="10dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moon light"
+            android:background="@drawable/cirle"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
 
-</LinearLayout>
+        <EditText
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textColorHint="#FFFBF6"
+            android:background="@drawable/button1"
+            />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:textColorHint="#FFFBF6"
+            android:background="@drawable/button2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep me Signed in "
+            android:textColor="#FFFBF6"
+            android:hint="#FFFBF6"
+            android:layout_marginTop="15dp"
+            android:buttonTint="#FFFBF6"
+            />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Signin"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button2"
+            android:textColor="#FFFBF6"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#3fff"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFBF6"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
